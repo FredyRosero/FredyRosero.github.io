@@ -4,6 +4,7 @@ author: Fredy Rosero
 tags: 'GitHub, Jekyll, Stackedit'
 status: published
 date: '2021-12-05'
+layout: post
 
 ---
 Primero debemos entender como funcion Github Pages (en adelante, GHP). GHP utiliza Jekyll el cual compila sitios web a a partir de Markdown (en adelante, MD).
@@ -37,6 +38,8 @@ categories: jekyll update
 # Hi!
 You’ll find this post in your `_posts` directory.
 ```
+Los metadatos `tittle`, `date` , `categories` y `tags` están presentes en *File properties > Simple properties*, mas no `layout`, por tal motivo, necesitamos definirlo en *File properties > YAML properties*.
+
 En nuestro repositorio GHP creado, habremos definido la carpeta y rama de publicación, las cuales van a ser nuestros parámetros de publicación. Primero  en *publish*, autorizamos Stackedit en Github pero con una [pequeña pirueta](https://github.com/benweet/stackedit/issues/1755#issuecomment-918949789) para solventar el error HTTP 400. Luego en *publish* seleccionamos "Publish to Github" y definimos los siguientes parámetros:
  * El repositorio es la misma URL de clonación `https://github.com/username/username.github.io.git` no la de publicación `https://username.github.io.git`.
  * La ruta del archivo nos da el nombre final del archivo, para un post sería `_posts/AAAA-MM-DD-titulo.markdown`.
