@@ -7,20 +7,20 @@ date: '2021-12-05'
 layout: post
 
 ---
-Primero debemos entender como funcion Github Pages (en adelante, GHP). GHP utiliza Jekyll el cual compila sitios web a a partir de Markdown (en adelante, MD).
+Primero debemos entender como funciona Github Pages (en adelante, GHP). GHP utiliza Jekyll el cual compila sitios web a a partir de Markdown (en adelante, MD).
 
 ## Workspace
 Debemos configurar un espacio de trabajo, donde vamos a guardar nuestros documentos (en formato markdown) y plantillas Stackedit, por tanto, debe ser en un repositorio diferente al de Github `username/username.github.io` donde queremos publicar, ya que tendríamos un enredo de markdowns stackedit y jekyll del mismo nombre.
 ## Formato
 Debemos entender que el formato en que GHP reconoce las páginas es el siguiente
-```
+```markdown
 ---
 [Encabezados YAML]
 ---
 [Markdown]
 ``` 
 Por tal motivo necesitamos crear un plantilla, en mi caso llamada "Github pages" con la siguiente entrada
-```
+```markdown
 ---  
 {{{files.0.content.yamlProperties}}}  
 ---  
