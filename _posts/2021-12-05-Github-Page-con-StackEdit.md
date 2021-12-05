@@ -25,12 +25,8 @@ Por tal motivo necesitamos crear un plantilla, en mi caso llamada "Github pages"
 {{{files.0.content.yamlProperties}}}  
 ---  
 {{{files.0.content.text}}}
-```
 {{ "{% this " }}%}
-```
 {{ "{{ this " }}}}
-```
-```
 ```
 
 Los valores `content.yamlProperties` son las metada del archivo (*File properties*) en formato YAML. El valor `content.text` simplemente entrega tal cual esta nuestro documento markdown de Stackedit.
