@@ -20,19 +20,21 @@
 
 title: Fredy Andres Rosero
 email: faroseroc@unal.edu.co
-description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-baseurl: "/" # the subpath of your site, e.g. /blog
+description: Estudiante de Ingeniería de sistemas, entusiasta de la divulgación y encantado con las artes
+baseurl: "" 
 url: "https://fredyrosero.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: fredyrosero
 github_username:  fredyrosero
+github: [metadata]
 
 # Build settings
-theme: jekyll-theme-slate
+theme: jekyll-theme-hacker
 plugins:
-  - jekyll-feed
+  - jekyll-remote-theme # add this line to the plugins list if you already have one
+  - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
+  - jekyll-feed # Create an Atom feed using the official Jekyll feed gem
+#theme: jekyll-theme-slate
+
 
 # Exclude from processing.
 # The following items will not be processed, by default.
