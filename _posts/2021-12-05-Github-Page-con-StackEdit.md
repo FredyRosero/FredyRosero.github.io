@@ -53,8 +53,14 @@ En nuestro repositorio GHP creado, habremos definido la carpeta y rama de public
  * La rama cuyo valor por defecto es `master` no nos sirve porque Github ahora la llama `main` [[1]](#1)
  * La plantilla es "Github pages" que creamos previamente. 
 
-## KaTeX
+## Renderizar ecuaciones
+Github desafortunadamente no soporta fórmulas matemáticas [[3]](#3)
 
+<img src="https://render.githubusercontent.com/render/math?math=e^{i \pi} = -1">
+
+![formula](https://render.githubusercontent.com/render/math?math=e^{i \pi} = -1)
+
+### KaTeX
 You can render LaTeX mathematical expressions using [KaTeX](https://khan.github.io/KaTeX/):
 
 The *Gamma function* satisfying $\Gamma(n) = (n-1)!\quad\forall n\in\mathbb N$ is via the Euler integral
@@ -63,9 +69,7 @@ $$
 \Gamma(z) = \int_0^\infty t^{z-1}e^{-t}dt\,.
 $$
 
-```math
-SE = \frac{\sigma}{\sqrt{n}}
-```
+
 
 > You can find more information about **LaTeX** mathematical expressions [here](http://meta.math.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference).
 
@@ -99,5 +103,8 @@ C --> D
 * <a name="1">[1]<a/> https://www.zdnet.com/article/github-to-replace-master-with-alternative-term-to-avoid-slavery-references/
 * <a name="2">[2]<a/> 
 https://jekyllrb.com/docs/liquid/tags/#code-snippet-highlighting
+* <a name="3">[3]<a/> https://github.com/github/markup/issues/897
+
+
 > Written with [StackEdit](https://stackedit.io/).
 
