@@ -19,7 +19,8 @@ Debemos entender que el formato en que GHP reconoce las páginas es el siguiente
 ---
 [Markdown]
 ``` 
-Por tal motivo necesitamos crear un plantilla, en mi caso llamada "Github pages" con la siguiente entrada
+Por tal motivo necesitamos crear un plantilla, en mi caso llamada "Github pages" con la siguiente entrada:
+
 {% raw  %}
 ```markdown
 ---  
@@ -28,6 +29,7 @@ Por tal motivo necesitamos crear un plantilla, en mi caso llamada "Github pages"
 {{{files.0.content.text}}}
 ```
 {% endraw %}
+
 Los valores `content.yamlProperties` son las metada del archivo (*File properties*) en formato YAML. El valor `content.text` simplemente entrega tal cual esta nuestro documento markdown de Stackedit.
 
 Jekyll diferencia su cotenido entre *pages* y *posts* puesto que esta orientado a Blogging. Los *posts* tiene la particularidad de ser nombrados con la sintáxis `YEAR-MONTH-DAY-title.MARKUP` y ubicados en `/_posts/`. Además tienen metada imporante para una renderización efectiva como `date` , `categories` y `tags`.  Así un MD para GHP nombrado '2021-12-05-Welcome-to-Jekyll' se vería así:
