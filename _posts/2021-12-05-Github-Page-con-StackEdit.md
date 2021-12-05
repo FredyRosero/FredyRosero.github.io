@@ -28,7 +28,7 @@ Por tal motivo necesitamos crear un plantilla, en mi caso llamada "Github pages"
 ---  
 {{{files.0.content.text}}}
 ```
-{% endraw %}
+{% endraw %}[[2]](#2)
 
 Los valores `content.yamlProperties` son las metada del archivo (*File properties*) en formato YAML. El valor `content.text` simplemente entrega tal cual esta nuestro documento markdown de Stackedit.
 
@@ -92,5 +92,7 @@ B --> D{Rhombus}
 C --> D
 ```
 <a name="1">[1]<a/> https://www.zdnet.com/article/github-to-replace-master-with-alternative-term-to-avoid-slavery-references/
+<a name="2">[2]<a/> 
+https://jekyllrb.com/docs/liquid/tags/#code-snippet-highlighting
 > Written with [StackEdit](https://stackedit.io/).
 
