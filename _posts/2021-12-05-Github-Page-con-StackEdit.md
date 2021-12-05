@@ -60,7 +60,7 @@ Github desafortunadamente no soporta fórmulas matemáticas [[3]](#3)
 
 ![formula](https://render.githubusercontent.com/render/math?math=e^{i \pi} = -1)
 
-![(b-a)/2^{x}<=tol](https://render.githubusercontent.com/render/math?math=\color{white}\large\%5Cleft(b-a%5Cright)%2F2%5E%7Bx%7D%20<%3Dtol)
+![(b-a)/2^{x}<=tol](https://render.githubusercontent.com/render/math?math=%5Cleft(b-a%5Cright)%2F2%5E%7Bx%7D%20<%3Dtol)
 
 ### KaTeX
 You can render LaTeX mathematical expressions using [KaTeX](https://khan.github.io/KaTeX/):
