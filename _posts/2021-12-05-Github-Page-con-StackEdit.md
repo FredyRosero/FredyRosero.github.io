@@ -1,5 +1,9 @@
 ---
-
+title: Github Page con StackEdit
+author: Fredy Rosero
+tags: 'GitHub, Jekyll, Stackedit'
+status: published
+date: '2021-12-05'
 
 ---
 Primero debemos entender como funcion Github Pages (en adelante, GHP). GHP utiliza Jekyll el cual compila sitios web a a partir de Markdown (en adelante, MD).
@@ -36,12 +40,10 @@ You’ll find this post in your `_posts` directory.
 En nuestro repositorio GHP creado, habremos definido la carpeta y rama de publicación, las cuales van a ser nuestros parámetros de publicación. Primero  en *publish*, autorizamos Stackedit en Github pero con una [pequeña pirueta](https://github.com/benweet/stackedit/issues/1755#issuecomment-918949789) para solventar el error HTTP 400. Luego en *publish* seleccionamos "Publish to Github" y definimos los siguientes parámetros:
  * El repositorio es la misma URL de clonación `https://github.com/username/username.github.io.git` no la de publicación `https://username.github.io.git`.
  * La ruta del archivo nos da el nombre final del archivo, para un post sería `_posts/AAAA-MM-DD-titulo.markdown`.
- * La rama
+ * La rama cuyo valor por defecto es `master` no nos sirve porque Github ahora la llama `main` [1]
+ * La plantilla es "Github pages" que creamos previamente. 
 
 
-
-Stackedit p
-
-
+[1] https://www.zdnet.com/article/github-to-replace-master-with-alternative-term-to-avoid-slavery-references/
 > Written with [StackEdit](https://stackedit.io/).
 
