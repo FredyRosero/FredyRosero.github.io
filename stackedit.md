@@ -1,9 +1,4 @@
----
-title: StackEdit
-layout: default
-permalink: /stackedit/
-author: Fredy Rosero
-tags: s<h1 id="welcome-to-stackedit">Welcome to StackEdit!</h1>
+<h1 id="welcome-to-stackedit">Welcome to StackEdit!</h1>
 <p>Hi! I’m your first Markdown file in <strong>StackEdit</strong>. If you want to learn about StackEdit, you can read me. If you want to play with Markdown, you can edit me. Once you have finished with me, you can create new files by opening the <strong>file explorer</strong> on the left corner of the navigation bar.</p>
 <h1 id="files">Files</h1>
 <p>StackEdit stores your files in your browser, which means all your files are automatically saved locally and are accessible <strong>offline!</strong></p>
@@ -143,5 +138,6 @@ tags: s<h1 id="welcome-to-stackedit">Welcome to StackEdit!</h1>
 eyJwcm9wZXJ0aWVzIjoidGl0bGU6IFN0YWNrRWRpdFxubGF5b3
 V0OiBkZWZhdWx0XG5wZXJtYWxpbms6IC9zdGFja2VkaXQvXG5h
 dXRob3I6IEZyZWR5IFJvc2Vyb1xudGFnczogc3RhY2tlZGl0XG
-4iLCJoaXN0b3J5IjpbLTE3MTA1NTA3MjNdfQ==
+4iLCJoaXN0b3J5IjpbMTEwNzI1NTg2NSwtMTcxMDU1MDcyM119
+
 -->
