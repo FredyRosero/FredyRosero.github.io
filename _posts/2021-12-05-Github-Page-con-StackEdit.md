@@ -91,8 +91,9 @@ A --> C(Round Rect)
 B --> D{Rhombus}
 C --> D
 ```
-<a name="1">[1]<a/> https://www.zdnet.com/article/github-to-replace-master-with-alternative-term-to-avoid-slavery-references/
-<a name="2">[2]<a/> 
+## Fuentes
+* <a name="1">[1]<a/> https://www.zdnet.com/article/github-to-replace-master-with-alternative-term-to-avoid-slavery-references/
+* <a name="2">[2]<a/> 
 https://jekyllrb.com/docs/liquid/tags/#code-snippet-highlighting
 > Written with [StackEdit](https://stackedit.io/).
 
