@@ -56,9 +56,9 @@ En nuestro repositorio GHP creado, habremos definido la carpeta y rama de public
 ## Renderizar ecuaciones
 Stackedit utiliza [KaTeX](https://khan.github.io/KaTeX/) para renderizar expresiones LaTeX de manera automática: 
 
-> La *función Gamma* satisface $\Gamma(n) = (n-1)!\quad\forall
-> n\in\mathbb N$ por medio dela integral de Euler $$ \Gamma(z) = \int_0^\infty
-> t^{z-1}e^{-t}dt\,. $$
+ La *función Gamma* satisface $\Gamma(n) = (n-1)!\quad\forall
+ n\in\mathbb N$ por medio dela integral de Euler $$ \Gamma(z) = \int_0^\infty
+ t^{z-1}e^{-t}dt\,. $$
 
 Pero Github desafortunadamente no renderiza la expresiones anterior ni soporta fórmulas matemáticas como la siguiente [[3]](#3) a diferencia de GitLab
 ```math
@@ -88,11 +88,8 @@ Podemos utilizar un [código sencillo](https://jsfiddle.net/faroseroc/jt6vL3dr/1
 
 #### Ejemplo
 
-> La *función Gamma* satisface <img
-src="https://render.githubusercontent.com/render/math?mode=inline&math=\color{gray} \Gamma(n)
-> = (n-1)!\quad\forall n\in\mathbb N"> por medio dela integral de Euler
-> <p align="center">   <img src="https://render.githubusercontent.com/render/math?math=\LARGE \color{gray}
-> \Gamma(z) = \int_0^\infty t^{z-1}e^{-t}dt\,."> </p>
+La *función Gamma* satisface <img src="https://render.githubusercontent.com/render/math?mode=inline&math=\color{gray} \Gamma(n)
+= (n-1)!\quad\forall n\in\mathbb N"> por medio dela integral de Euler <p align="center">   <img src="https://render.githubusercontent.com/render/math?math=\LARGE \color{gray} \Gamma(z) = \int_0^\infty t^{z-1}e^{-t}dt\,."> </p>
 
 
 ## UML diagrams
