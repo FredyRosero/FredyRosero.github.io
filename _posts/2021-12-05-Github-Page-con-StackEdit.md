@@ -54,13 +54,27 @@ En nuestro repositorio GHP creado, habremos definido la carpeta y rama de public
  * La plantilla es "Github pages" que creamos previamente. 
 
 ## Renderizar ecuaciones
-Github desafortunadamente no soporta fórmulas matemáticas [[3]](#3)
-
+Github desafortunadamente no soporta fórmulas matemáticas como la siguiente [[3]](#3)
+```math
+e^{i \pi} = -1
+``` 
+sin embargo podemos utilizar APIs que reciban el contenido LaTeX como variable GET y que devuelan una imagen, y así insertar la imagen en el MD como elemento img HTML: 
+```HTML
+<img src="https://render.githubusercontent.com/render/math?math=e^{i \pi} = -1">
+```
 <img src="https://render.githubusercontent.com/render/math?math=e^{i \pi} = -1">
 
-![formula](https://render.githubusercontent.com/render/math?math=e^{i \pi} = -1)
+Si queremos utilizar la sintaxis de imagen GFM (GitHub Flavored Markdown) [[4]](#4) necesitamos codificar en URL UTF-8 el contenido LaTeX o de lo contrario tendremos problemas de renderización
+```markdown
+![e^{i \pi} = -1](https://render.githubusercontent.com/render/math?math=e^{i \pi} = -1)
+```
+![e^{i \pi} = -1](https://render.githubusercontent.com/render/math?math=e^{i \pi} = -1)
 
-![(b-a)/2^{x}<=tol](https://render.githubusercontent.com/render/math?math=%5Cleft(b-a%5Cright)%2F2%5E%7Bx%7D%20<%3Dtol)
+Podemo utilizar herramientas en linea como [urlencoder.org] para codificarel texo correctamente (https://www.urlencoder.org/enc/latex/)
+```markdown
+![e^{i \pi} = -1l](https://render.githubusercontent.com/render/math?math=e%5E%7Bi%20%5Cpi%7D%20%3D%20-1)
+```
+![e^{i \pi} = -1l](https://render.githubusercontent.com/render/math?math=e%5E%7Bi%20%5Cpi%7D%20%3D%20-1)
 
 ### KaTeX
 You can render LaTeX mathematical expressions using [KaTeX](https://khan.github.io/KaTeX/):
@@ -106,7 +120,7 @@ C --> D
 * <a name="2">[2]<a/> 
 https://jekyllrb.com/docs/liquid/tags/#code-snippet-highlighting
 * <a name="3">[3]<a/> https://github.com/github/markup/issues/897
-
+* <a name="4">[4]<a/>  https://github.github.com/gfm/#images
 
 > Written with [StackEdit](https://stackedit.io/).
 
