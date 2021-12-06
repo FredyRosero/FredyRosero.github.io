@@ -120,11 +120,11 @@ B --> D{Rhombus}
 C --> D
 ```
 ## Fuentes
-* <a name="1">[1]<a/> https://www.zdnet.com/article/github-to-replace-master-with-alternative-term-to-avoid-slavery-references/
-* <a name="2">[2]<a/> 
+* <a id="1">[1]<a/> https://www.zdnet.com/article/github-to-replace-master-with-alternative-term-to-avoid-slavery-references/
+* <a id="2">[2]<a/> 
 https://jekyllrb.com/docs/liquid/tags/#code-snippet-highlighting
-* <a name="3">[3]<a/> https://github.com/github/markup/issues/897
-* <a name="4">[4]<a/>  https://github.github.com/gfm/#images
+* <a id="3">[3]<a/> https://github.com/github/markup/issues/897
+* <a id="4">[4]<a/>  https://github.github.com/gfm/#images
 
 > Written with [StackEdit](https://stackedit.io/).
 
