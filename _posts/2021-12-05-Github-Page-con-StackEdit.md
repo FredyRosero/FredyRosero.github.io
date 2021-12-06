@@ -83,8 +83,8 @@ Podemo utilizar herramientas en linea como [urlencoder.org] para codificarel tex
 ```
 ![e^{i \pi} = -1](https://render.githubusercontent.com/render/math?math=e%5E%7Bi%20%5Cpi%7D%20%3D%20-1)
 
-Podemos utilizar un [código sencillo](https://jsfiddle.net/faroseroc/jt6vL3dr/12/) para generar nuestras imágenes GFM a partir de LaTeX
-<iframe width="100%" height="300" src="//jsfiddle.net/faroseroc/jt6vL3dr/12/embedded/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+Podemos utilizar un [código sencillo](https://jsfiddle.net/faroseroc/jt6vL3dr/17/) para generar nuestras imágenes GFM a partir de LaTeX
+<iframe width="100%" height="300" src="//jsfiddle.net/faroseroc/jt6vL3dr/17/embedded/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
 
 #### Ejemplo
 
