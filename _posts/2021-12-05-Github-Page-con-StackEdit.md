@@ -64,7 +64,7 @@ sin embargo podemos utilizar APIs que reciban el contenido LaTeX como variable G
 ```
 <img src="https://render.githubusercontent.com/render/math?math=e^{i \pi} = -1">
 
-Si queremos utilizar la sintaxis de imagen GFM (GitHub Flavored Markdown) [[4]](#4) necesitamos codificar en URL UTF-8 el contenido LaTeX o de lo contrario tendremos problemas de renderización
+Si queremos utilizar la sintaxis de imagen GFM (GitHub Flavored Markdown) [[4]](#4) necesitamos codificar en URL UTF-8 el contenido LaTeX o de lo contrario tendremos problemas de renderización en Stackedit y directamente en Github `https://github.com/username/username.github.io.git` sin embargo no en GHP `https://username.github.io.git`
 ```markdown
 ![e^{i \pi} = -1](https://render.githubusercontent.com/render/math?math=e^{i \pi} = -1)
 ```
@@ -72,9 +72,11 @@ Si queremos utilizar la sintaxis de imagen GFM (GitHub Flavored Markdown) [[4]](
 
 Podemo utilizar herramientas en linea como [urlencoder.org] para codificarel texo correctamente (https://www.urlencoder.org/enc/latex/)
 ```markdown
-![e^{i \pi} = -1l](https://render.githubusercontent.com/render/math?math=e%5E%7Bi%20%5Cpi%7D%20%3D%20-1)
+![e^{i \pi} = -1](https://render.githubusercontent.com/render/math?math=e%5E%7Bi%20%5Cpi%7D%20%3D%20-1)
 ```
-![e^{i \pi} = -1l](https://render.githubusercontent.com/render/math?math=e%5E%7Bi%20%5Cpi%7D%20%3D%20-1)
+![e^{i \pi} = -1](https://render.githubusercontent.com/render/math?math=e%5E%7Bi%20%5Cpi%7D%20%3D%20-1)
+
+<script async src="//jsfiddle.net/faroseroc/jt6vL3dr/12/embed/"></script>
 
 ### KaTeX
 You can render LaTeX mathematical expressions using [KaTeX](https://khan.github.io/KaTeX/):
