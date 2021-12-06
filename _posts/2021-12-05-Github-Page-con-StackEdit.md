@@ -54,11 +54,18 @@ En nuestro repositorio GHP creado, habremos definido la carpeta y rama de public
  * La plantilla es "Github pages" que creamos previamente. 
 
 ## Renderizar ecuaciones
-Github desafortunadamente no soporta fórmulas matemáticas como la siguiente [[3]](#3)
+Stackedit utiliza [KaTeX](https://khan.github.io/KaTeX/) para renderizar expresiones LaTeX de manera automática: 
+
+> La *función Gamma* satisface $\Gamma(n) = (n-1)!\quad\forall
+> n\in\mathbb N$ por medio dela integral de Euler $$ \Gamma(z) = \int_0^\infty
+> t^{z-1}e^{-t}dt\,. $$
+
+Pero Github desafortunadamente no renderiza la expresiones anterior ni soporta fórmulas matemáticas como la siguiente [[3]](#3) a diferencia de GitLab
 ```math
 e^{i \pi} = -1
 ``` 
-sin embargo podemos utilizar APIs que reciban el contenido LaTeX como variable GET y que devuelan una imagen, y así insertar la imagen en el MD como elemento img HTML: 
+### Imágen GFM
+Sin embargo, podemos utilizar APIs que reciban el contenido LaTeX como variable GET y que devuelan una imagen, y así insertar la imagen en el MD como elemento img HTML: 
 ```HTML
 <img src="https://render.githubusercontent.com/render/math?math=e^{i \pi} = -1">
 ```
@@ -76,20 +83,16 @@ Podemo utilizar herramientas en linea como [urlencoder.org] para codificarel tex
 ```
 ![e^{i \pi} = -1](https://render.githubusercontent.com/render/math?math=e%5E%7Bi%20%5Cpi%7D%20%3D%20-1)
 
+Podemos utilizar un [código sencillo](https://jsfiddle.net/faroseroc/jt6vL3dr/12/) para generar nuestras imágenes GFM a partir de LaTeX
 <iframe width="100%" height="300" src="//jsfiddle.net/faroseroc/jt6vL3dr/12/embedded/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
 
-### KaTeX
-You can render LaTeX mathematical expressions using [KaTeX](https://khan.github.io/KaTeX/):
+#### Ejemplo
 
-The *Gamma function* satisfying $\Gamma(n) = (n-1)!\quad\forall n\in\mathbb N$ is via the Euler integral
-
-$$
-\Gamma(z) = \int_0^\infty t^{z-1}e^{-t}dt\,.
-$$
-
-
-
-> You can find more information about **LaTeX** mathematical expressions [here](http://meta.math.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference).
+> La *función Gamma* satisface <img
+src="https://render.githubusercontent.com/render/math?mode=inline&math=\color{gray} \Gamma(n)
+> = (n-1)!\quad\forall n\in\mathbb N"> por medio dela integral de Euler
+> <p align="center">   <img src="https://render.githubusercontent.com/render/math?math=\LARGE \color{gray}
+> \Gamma(z) = \int_0^\infty t^{z-1}e^{-t}dt\,."> </p>
 
 
 ## UML diagrams
@@ -125,4 +128,7 @@ https://jekyllrb.com/docs/liquid/tags/#code-snippet-highlighting
 * <a name="4">[4]<a/>  https://github.github.com/gfm/#images
 
 > Written with [StackEdit](https://stackedit.io/).
+
+
+
 
