@@ -88,10 +88,10 @@ Podemos utilizar un [código sencillo](https://jsfiddle.net/faroseroc/jt6vL3dr/1
 
 #### Ejemplo
 
-La *función Gamma* satisface <img src="https://render.githubusercontent.com/render/math?math=%5Ccolor%7Bgray%7D%20%5CGamma(n)%0A%3D%20(n-1)!%5Cquad%5Cforall%20n%5Cin%5Cmathbb%20N"> por medio dela integral de Euler 
-<p align="center">
-<img src="https://render.githubusercontent.com/render/math?math=\LARGE \color{gray} \Gamma(z) = \int_0^\infty t^{z-1}e^{-t}dt\,.">
-</p>
+La *función Gamma* satisface <img src="https://render.githubusercontent.com/render/math?math=%5Ccolor%7Bgray%7D%20%5CGamma(n)%0A%3D%20(n-1)!%5Cquad%5Cforall%20n%5Cin%5Cmathbb%20N">
+ por medio dela integral de Euler  
+<p align="center"> 
+ <img src="https://render.githubusercontent.com/render/math?math=\LARGE \color{gray} \Gamma(z) = \int_0^\infty t^{z-1}e^{-t}dt\,."> </p>
 
 
 ## UML diagrams
