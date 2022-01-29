@@ -10,3 +10,5 @@ layout: post
 $$
 \lim\limits_{x \to \infty} \exp(-x) = 0
 $$
+
+> Written with Github raw editor.
