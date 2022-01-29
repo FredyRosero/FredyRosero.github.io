@@ -18,4 +18,4 @@ A continuación un bloque estilo Matjax:
 \dot{z} &amp; = -\beta z + xy
 \end{align}
 
-> Written with Github raw editor.
+> Written with Github raw editor
