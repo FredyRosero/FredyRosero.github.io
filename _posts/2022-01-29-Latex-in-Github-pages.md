@@ -1,7 +1,3 @@
-<script type="text/javascript" charset="utf-8" 
-src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML,
-https://vincenttam.github.io/javascripts/MathJaxLocal.js"></script>
-
 ---
 title: Latex in Github Page
 author: Fredy Rosero
