@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Golem automaton"
-permalink: /golem-automaton/
+permalink: /golem/
 ---
 
 # Golem automaton
