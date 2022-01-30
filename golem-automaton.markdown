@@ -6,7 +6,7 @@ permalink: /golem-automaton/
 
 # Golem automaton
 
-Cuerpo de la página contacto.
+Cuerpo de la página contacto
 
 You can find the source code for Jekyll at GitHub:
 [jekyll][jekyll-organization] /
