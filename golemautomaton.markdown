@@ -6,5 +6,5 @@ permalink: /golemautomaton/
 
 # Golem automaton
 
-Cuerpo de la página contacto.
+Cuerpo de la página contacto
 
