@@ -17,7 +17,8 @@ $$
 \end{align}
 $$
 
-A continuación un diagrama
+## Diagramas con Mermaid JS
+A continuación un diagrama:
 <div class="mermaid">
 sequenceDiagram
     autonumber
