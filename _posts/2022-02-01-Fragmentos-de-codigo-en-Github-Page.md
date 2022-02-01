@@ -24,7 +24,7 @@ print '{0}{1}'.format(foo,bar)
 Esto nos permite utilizar un snippet de una manera sencilla y visibles tanto en un repositorio de Github como en una Githbu Page.
 
 ## Snippets externos
-En el caso de que quisieramos insertar un fragmento de código alojado de manera externa podemos utilizar *Gist* de Github o *Ideone*
+En el caso de que quisieramos insertar un fragmento de código alojado de manera externa podemos utilizar *Gist* de Github o *Ideone*. La limitante aquí es que al ser scripts no se ejecutarían en el repositorio por razones de seguridad.
 
 A continaución está un snippet en [Github Gits](https://gist.github.com/FredyRosero/46d12851134003dabeeb5b56d389e69f) escrito como:
 ```html
