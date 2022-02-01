@@ -1,5 +1,5 @@
 ---
-title: Frágmento de código (code snippet) en markdown Github
+title: Frágmentos de código (code snippets) en Github Page (Jekyll)
 author: Fredy Rosero
 status: published
 date: '2022-01-29'
