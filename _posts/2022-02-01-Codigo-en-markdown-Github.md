@@ -15,14 +15,17 @@ bar = ", mundo!"
 print '{0}{1}'.format(foo,bar)
 ```
 ~~~
-nos renderiza en HTML un bloque de código python con sintáxis resaltado
+nos renderiza en HTML un bloque de código python con sintáxis resaltada
 ```python
 foo = "hola"
 bar = ", mundo!"
 print '{0}{1}'.format(foo,bar)
 ```
-Esto nos permite utilizar un snippet de una manera sencilla, sin embargo, a veces queremos estilizar los snippets
-## Gits
+Esto nos permite utilizar un snippet de una manera sencilla y visibles tanto en un repositorio de Github como en una Githbu Page.
+
+## Snippets externos
+En el caso de que quisieramos insertar un fragmento de código alojado de manera externa podemos utilizar *Gist* de Github o *Ideone*
+
 A continaución está un snippet en [Github Gits](https://gist.github.com/FredyRosero/46d12851134003dabeeb5b56d389e69f) escrito como:
 ```html
 <script src="https://gist.github.com/FredyRosero/46d12851134003dabeeb5b56d389e69f.js"></script>
@@ -30,22 +33,23 @@ A continaución está un snippet en [Github Gits](https://gist.github.com/FredyR
 Resultado:
 <script src="https://gist.github.com/FredyRosero/46d12851134003dabeeb5b56d389e69f.js"></script>
 
-## Ideone
-A continaución está snippet en [ideone.com/kKxFrr](https://ideone.com/kKxFrr) escrito como:
-Código:
+\
+Ideone nos permite compilar e interpretar códigos desde su sitio web  y además guardarlos en una cuenta de usuario. Cada código puede ser insertado en un snippet de tema blanco. A continaución un snippet en [ideone.com/kKxFrr](https://ideone.com/kKxFrr):
 ```html
 <script src="https://ideone.com/e.js/kKxFrr" type="text/javascript" ></script>
 ```
 Resultado:
 <script src="https://ideone.com/e.js/kKxFrr" type="text/javascript" ></script>
 
-## Trinket
-Trinket permite no solo mostrar el código sino además muestra la salida del programa
+## Snippet con salida
+Trinket al igual que Ideone es una platamforma para compilar e interpretar código online. La ventaja de un snippet Trinket, es que permitee no solo mostrar el código sino además nos permite correr el programa para ver la salida del programa, en realidad tenemos un `<iframe>` con una versión compacta de su aplicación web.
 Código:
 ```html
-<iframe src="https://trinket.io/embed/python/5ce18dede7?toggleCode=true&runOption=run" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+<iframe src="https://trinket.io/embed/python3/d58e1cf1a9?toggleCode=true&runOption=run" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 ```
 Resultado:
-<iframe src="https://trinket.io/embed/python/5ce18dede7?toggleCode=true&runOption=run" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+<iframe src="https://trinket.io/embed/python3/d58e1cf1a9?toggleCode=true&runOption=run" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+
 \
-Lamentablemente
+Lamentablemente Trinket solo permite a los usuarios gratiutos guardar códigos en *Python 2*. Para poder gestionar códigos en además Pygame, R o Java se debe mejorar la cuanta un [[plan Code+ de 3 USD por mes]](https://trinket.io/plans).
+
