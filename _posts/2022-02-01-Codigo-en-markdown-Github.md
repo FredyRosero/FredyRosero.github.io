@@ -14,7 +14,7 @@ A continaución está un snippet en [Github Gits](https://gist.github.com/FredyR
 Resultado:
 <script src="https://gist.github.com/FredyRosero/46d12851134003dabeeb5b56d389e69f.js"></script>
 
-
+\
 A continaución está snippet en [ideone.com/kKxFrr](https://ideone.com/kKxFrr) escrito como:
 Código:
 ```html
