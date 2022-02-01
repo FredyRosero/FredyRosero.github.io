@@ -4,7 +4,7 @@ author: Fredy Rosero
 status: published
 date: '2022-01-29'
 layout: post
-tasg: code-snippet github-page gits ideone trinket jekyll
+tags: code-snippet github-page gits ideone trinket jekyll
 ---
 ## Markdown
 Markdown permite insertar bloques de código envueltos por ``` o `~~~`. Por ejemplo escribir el documento el siguiente fragmento
