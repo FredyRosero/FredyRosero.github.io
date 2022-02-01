@@ -34,7 +34,7 @@ Resultado:
 <script src="https://gist.github.com/FredyRosero/46d12851134003dabeeb5b56d389e69f.js"></script>
 
 \
-Ideone nos permite compilar e interpretar códigos desde su sitio web  y además guardarlos en una cuenta de usuario. Cada código puede ser insertado en un snippet de tema blanco. A continaución un snippet en [ideone.com/kKxFrr](https://ideone.com/kKxFrr):
+[Ideone](https://ideone.com/) por su parte, nos permite compilar e interpretar códigos desde su sitio web  y además guardarlos en una cuenta de usuario. Cada código puede ser insertado en un snippet de tema blanco. A continaución un snippet en [ideone.com/kKxFrr](https://ideone.com/kKxFrr):
 ```html
 <script src="https://ideone.com/e.js/kKxFrr" type="text/javascript" ></script>
 ```
