@@ -31,7 +31,7 @@ Resultado:
 <img src="https://render.githubusercontent.com/render/math?math=e^{i \pi} = -1">
 
 \
-Si queremos utilizar la sintaxis de imagen GFM (GitHub Flavored Markdown) [[4]](#4) necesitamos codificar en URL UTF-8 el contenido LaTeX o de lo contrario tendremos problemas de renderización directamente en Github `https://github.com/username/username.github.io.git` sin embargo no en GHP `https://username.github.io.git`
+Si queremos utilizar la sintaxis de imagen GFM (GitHub Flavored Markdown) [[4]](#4) necesitamos codificar en URL UTF-8 el contenido LaTeX o de lo contrario tendremos problemas de renderización
 
 Código: 
 
