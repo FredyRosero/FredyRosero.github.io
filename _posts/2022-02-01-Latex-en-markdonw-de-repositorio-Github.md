@@ -30,6 +30,7 @@ Resultado:
 
 <img src="https://render.githubusercontent.com/render/math?math=e^{i \pi} = -1">
 
+\
 Si queremos utilizar la sintaxis de imagen GFM (GitHub Flavored Markdown) [[4]](#4) necesitamos codificar en URL UTF-8 el contenido LaTeX o de lo contrario tendremos problemas de renderización en Stackedit y directamente en Github `https://github.com/username/username.github.io.git` sin embargo no en GHP `https://username.github.io.git`
 
 Código: 
@@ -41,7 +42,8 @@ Resultado:
 
 ![e^{i \pi} = -1](https://render.githubusercontent.com/render/math?math=e^{i \pi} = -1)
 
-Podemo utilizar herramientas en linea como [urlencoder.org] para codificarel texo correctamente (https://www.urlencoder.org/enc/latex/)
+\
+Podemo utilizar herramientas en linea como *urlencoder.org* para codificar el texo correctamente [urlencoder.org/enc/latex/](https://www.urlencoder.org/enc/latex/)
 
 Código: 
 
@@ -53,10 +55,12 @@ Resultado:
 
 ![e^{i \pi} = -1](https://render.githubusercontent.com/render/math?math=e%5E%7Bi%20%5Cpi%7D%20%3D%20-1)
 
+
+\
 Podemos utilizar un [código sencillo](https://jsfiddle.net/faroseroc/jt6vL3dr/17/) para generar nuestras imágenes GFM a partir de LaTeX
 <iframe width="100%" height="300" src="//jsfiddle.net/faroseroc/jt6vL3dr/17/embedded/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
 
-## Ejemplo
+## Ejemplo final
 
 La *función Gamma* satisface <img src="https://render.githubusercontent.com/render/math?math=%5Ccolor%7Bgray%7D%20%5CGamma(n)%0A%3D%20(n-1)!%5Cquad%5Cforall%20n%5Cin%5Cmathbb%20N">
  por medio dela integral de Euler  
