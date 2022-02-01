@@ -45,10 +45,10 @@ Resultado:
 Trinket al igual que Ideone es una platamforma para compilar e interpretar código online. La ventaja de un snippet Trinket, es que permitee no solo mostrar el código sino además nos permite correr el programa para ver la salida del programa, en realidad tenemos un `<iframe>` con una versión compacta de su aplicación web.
 Código:
 ```html
-<iframe src="https://trinket.io/embed/python3/d58e1cf1a9?toggleCode=true&runOption=run" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+<iframe src="https://trinket.io/embed/python3/d58e1cf1a9?runOption=run" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 ```
 Resultado:
-<iframe src="https://trinket.io/embed/python3/d58e1cf1a9?toggleCode=true&runOption=run" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+<iframe src="https://trinket.io/embed/python3/d58e1cf1a9?runOption=run" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 
 \
 Lamentablemente Trinket solo permite a los usuarios gratiutos guardar códigos en *Python 2*. Para poder gestionar códigos en además Pygame, R o Java se debe mejorar la cuanta un [[plan Code+ de 3 USD por mes]](https://trinket.io/plans).
