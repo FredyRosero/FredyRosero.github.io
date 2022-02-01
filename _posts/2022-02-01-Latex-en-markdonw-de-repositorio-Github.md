@@ -1,13 +1,13 @@
 ---
-title: Latex en markdonw de repositorio Github 
+title: Latex en markdown de repositorio Github 
 author: Fredy Rosero
-tags: 'GitHub Latex'
+tags: 'GitHub Latex Markdown'
 status: published
 date: '2022-02-01'
 layout: post
 ---
 
-Si revisamos este documento directamente en el repositoriode Github notaremos que expresiones como la acontinuación no se renderizan en *LaTeX*
+Si revisamos este documento directamente en el repositorio de Github notaremos que expresiones como la de continuación no se renderizan en *LaTeX*
 
  La *función Gamma* satisface $\Gamma(n) = (n-1)!\quad\forall
  n\in\mathbb N$ por medio dela integral de Euler $$ \Gamma(z) = \int_0^\infty
