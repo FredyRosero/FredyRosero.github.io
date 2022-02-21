@@ -2,6 +2,7 @@
 title: Latex en Github Page
 author: Fredy Rosero
 tags: 'GitHub Jekyll Latex Katex'
+categories: Github
 status: published
 date: '2022-01-29'
 layout: post

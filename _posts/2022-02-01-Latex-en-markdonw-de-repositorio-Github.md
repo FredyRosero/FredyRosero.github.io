@@ -2,6 +2,7 @@
 title: Latex en markdown de repositorio Github 
 author: Fredy Rosero
 tags: 'GitHub Latex Markdown'
+categories: Github
 status: published
 date: '2022-02-01'
 layout: post

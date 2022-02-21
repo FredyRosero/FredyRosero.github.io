@@ -4,6 +4,8 @@ author: Fredy Rosero
 status: published
 date: '2022-02-21'
 layout: post
+categories: Github
+tags: github github-page mermaid uml
 ---
 Github anunció en [un blog del 14 de febrero '21](https://github.blog/2022-02-14-include-diagrams-markdown-files-mermaid/) soporte para [Mermeaid](https://mermaid-js.github.io/mermaid/#/) en sus markdowns de sus reposistorios. Esto permite que el siguiente código de *Mermeaid* sea renderizado perfectamente en repositorios de Github
 ~~~markdown

@@ -4,10 +4,11 @@ author: Fredy Rosero
 status: published
 date: '2022-01-29'
 layout: post
+categories: Github
 tags: code-snippet github-page gits ideone trinket jekyll
 ---
 ## Markdown
-Markdown permite insertar bloques de código envueltos por ``` o `~~~`. Por ejemplo escribir el documento el siguiente fragmento
+Markdown permite insertar bloques de código envueltos por tres signos [acento grave](https://es.wikipedia.org/wiki/Acento_grave) (en inglés *backtick*) o tres signos [tilde de eñe](https://es.wikipedia.org/wiki/Virgulilla) (en inglés *tilde*). Por ejemplo, al escribir en el documento el siguiente fragmento
 ~~~markdown
 ```python
 foo = "hola"
@@ -15,7 +16,7 @@ bar = ", mundo!"
 print '{0}{1}'.format(foo,bar)
 ```
 ~~~
-nos renderiza en HTML un bloque de código python con sintáxis resaltada
+se nos compila en HTML un bloque `<pre>` con el código y su sintáxis resaltada para python
 ```python
 foo = "hola"
 bar = ", mundo!"

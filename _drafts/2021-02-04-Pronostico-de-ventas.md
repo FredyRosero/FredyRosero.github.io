@@ -1,7 +1,6 @@
 ---
 title: Evaluación de inversión
 author: Fredy Rosero
-status: published
 date: '2022-02-04'
 layout: post
 tags: marketing inversion

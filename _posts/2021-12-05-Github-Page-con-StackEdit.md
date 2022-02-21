@@ -5,7 +5,7 @@ tags: 'GitHub, Jekyll, Stackedit'
 status: published
 date: '2021-12-05'
 layout: post
-
+categories: Github
 ---
 Primero debemos entender como funciona Github Pages (en adelante, GHP). GHP utiliza Jekyll el cual compila sitios web a a partir de Markdown (en adelante, MD).
 
