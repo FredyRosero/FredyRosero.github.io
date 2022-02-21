@@ -1,5 +1,5 @@
 ---
-title: Latex in Github Page
+title: Latex en Github Page
 author: Fredy Rosero
 tags: 'GitHub Jekyll Latex Katex'
 status: published
