@@ -6,7 +6,10 @@ date: '2022-02-27'
 layout: post
 category: Google Cloud
 ---
-# Capa gratuita de **Compute Engine** 
+![banner-google-cloud.png](/assets/banner-google-cloud.png)
+Muchas veces queremos desplegar un servidor web con fines pedagógicos o experimentales, y por ende, nos estaríamos dispuestos a pagar un hosting por un sitio web que al cumplir su finalidad se arrume en el olvido. Aquí es donde entra la capa gratuita de Google Cloud para su service Compute Engine que nos permite montar una máquina virtual para configurarla a nuestro antojo.
+
+## Capa gratuita de **Compute Engine** 
 Todos los clientes de Google Cloud pueden usar Compute Engine, Cloud Storage, y BigQuery gratis solo si lo usan dentro de los limites especificados:
 
 * Una instania en una de la zonas: 
@@ -26,7 +29,7 @@ El limite de la capa gratuita para instancias E2-micro se contabiliza sumando de
 [Mas info.](https://cloud.google.com/free/docs/gcp-free-tier/#compute)
 
 # Google Cloud CLI
-GC tiene un cliente CLI que podemos usar desde nuestra consola de Windows o Linux para admiistrar nuestros pryectos de GC o conectarnos a nuestras MV. Si bien noe s obligatorio ayudará y simplificará muchas tareas que impliquen proyectos en Google Cloud. 
+GC tiene un cliente CLI que podemos usar desde nuestra consola de Windows o Linux para administrar nuestros pryectos de GC o conectarnos a nuestras MV. Si bien noe s obligatorio ayudará y simplificará muchas tareas que impliquen proyectos en Google Cloud. 
 
 Instala el GC CLI para windows desde PoweShell [[?]](https://cloud.google.com/sdk/docs/install-sdk#windows)
 ```powershell
@@ -41,7 +44,7 @@ tar -xf google-cloud-sdk-374.0.0-linux-x86.tar.gz
 ./google-cloud-sdk/bin/gcloud init
 ```
 
-# Proyecto Google Cloud para la MV
+## Proyecto Google Cloud para la MV
 Debemos primero que todo crear un proyecto Google Cloud y luego una instancia de MV:
 1. Configura un proyecto Google Cloud (GCP)
     1. Selecciona un proyecto o crea uno.
@@ -54,7 +57,7 @@ Debemos primero que todo crear un proyecto Google Cloud y luego una instancia de
     4. Y definiré la zona en `'your_VM_zone'`
     4. En el tipo de máquina seleccionamos **e2-micro**.
 
-# Conectarse a la maquina
+## Conectarse a la maquina
 
 **Opción 1**: Cloud Shell desde web o GC CLI
 1. Click the Activate Cloud Shell button.
@@ -117,7 +120,7 @@ Debemos primero que todo crear un proyecto Google Cloud y luego una instancia de
     4. En el panel de la izquierda ahora volvemos a `Session` y en hostname ingresamos `$USERNAME@$EXTERNAL_IP`.
     5. Finalmente, hacemos clic en `Open` para abrir la conexión SSH y aceptamos la nueva firma en nuestro equipo.
 
-# Servidor web
+## Servidor web
 1. Instala el servidor web Apache
     ```bash
     sudo apt update
@@ -140,7 +143,8 @@ Debemos primero que todo crear un proyecto Google Cloud y luego una instancia de
     curl -s localhost:80 | md5sum
     cat /var/www/html/index.html | md5sum
     ```
-# Ruta de archivos personalizada
+
+## Ruta de archivos personalizada
 1. Vamos a cambiar la raíz del directorio web por uno nuestro al cual le agregaremos una página de inicio
     ```bash
     mkdir /home/user/www
