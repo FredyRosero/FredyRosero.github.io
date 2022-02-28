@@ -1,5 +1,5 @@
 ---
-title: Crear una servidor web con Google Cloud
+title: Crear una servidor web grátis con Google Cloud
 author: Fredy Rosero
 tags: 'google-cloud, comput-engine, apache, servidor-web'
 date: '2022-02-27'
