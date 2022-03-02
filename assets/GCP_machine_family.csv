@@ -1,0 +1,32 @@
+Workload type							
+General-purpose workloads			Optimized workloads				
+Cost-optimized	Balanced	Scale-out optimized	Memory-optimized	Compute-optimized	Accelerator-optimized		
+E2	N2, N2D, N1	Tau T2D	M2, M1	C2, C2D	A2		
+Day-to-day computing at a lower cost	Balanced price/performance across a wide range of VM shapes	Best performance/cost for scale-out workloads	Ultra high-memory workloads	Ultra high performance for compute-intensive workloads	Optimized for high performance computing workloads		
+"Web serving
+App serving
+Back office apps
+Small-medium databases
+Microservices
+Virtual desktops
+Development environments"	"Web serving
+App serving
+Back office apps
+Medium-large databases
+Cache
+Media/streaming"	"Scale-out workloads
+Web serving
+Containerized microservices
+Media transcoding
+Large-scale Java applications"	"Medium-large in-memory databases such as SAP HANA
+In-memory databases and in-memory analytics
+Microsoft SQL Server and similar databases"	"Compute-bound workloads
+High-performance web serving
+Gaming (AAA game servers)
+Ad serving
+High-performance computing (HPC)
+Media transcoding
+AI/ML"	"CUDA-enabled ML training and inference
+HPC
+Massive parallelized computation"		
+#https://cloud.google.com/compute/docs/machine-types#e2_shared-core_machine_types
