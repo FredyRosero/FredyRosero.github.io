@@ -4,3 +4,4 @@ _site
 .jekyll-metadata
 vendor
 FredyRosero.github.io.code-workspace
+.vscode
