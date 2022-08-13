@@ -9,7 +9,7 @@ excerpt_separator: <!--more-->
 ---
 ![thumbnail]()
 
-Vamos a dividir el uso de Vim e dos partes: Una de emergencia, en caso de que te hayas quedado atrapado en Vim y otra si quieres empezar a manejar Vim como tu editor favorito.
+Vamos a dividir la explicación del uso de Vim en dos partes: Una de emergencia, en caso de que te hayas quedado atrapado en Vim y otra si quieres empezar a manejar Vim como tu editor favorito.
  <!--more-->
 
 ## Explicación de Emergencia
@@ -27,7 +27,7 @@ Para ejecutar los siguientes comandos solo tienes que estar en el modo *COMMAND*
 * `:w` guardar cambios
 * `:wq` guardar cambios y salir
 
-## Básico
+## Explicación introductoria
 https://www.keycdn.com/blog/vim-commands
 
 ### Edición
@@ -53,8 +53,8 @@ if (true) {
 }
 ```
 * `v` Entra en modo visual normal.
-* `vib` Selecionar interior de bloque (entre parentesis, corchetes, etc).
-* `vab` Selecionar bloque incluyendo caracteres externos  (parentesis, corchetes, etc).
+* `vib` Seleccionar interior de bloque (entre paréntesis, corchetes, etc).
+* `vab` Seleccionar bloque incluyendo caracteres externos  (paréntesis, corchetes, etc).
 * `vi`+
 * `←`,`↑`, `↓`, `→` o `h`,`j`,`k`,`l` Expande la selección hacia la izquierda, arriba, abajo y derecha.
 #### Selección de bloques
@@ -72,5 +72,13 @@ Al tener un texto seleccionado simplemente presionado una tecla puedes activar l
 Clic and point
 Para activar el mouse temporal
 ```bash
-set mouse=a
+:set mouse=a
 ```
+### Comandos útiles para programación
+Habilitar números de línea `:set number`
+Deshabilitar números de línea `:set number!`
+Configurar identación de *tab* con 4 espacios `:set expandtab ts=4 sw=4 ai`
+Re formatear espacios de *tab*: `:%retab`
+
+## Configuración permanente
+Crea un archivo `~/.vimrc`

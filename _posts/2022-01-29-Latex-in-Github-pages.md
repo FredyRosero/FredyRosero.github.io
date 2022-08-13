@@ -8,7 +8,7 @@ date: '2022-01-29'
 layout: post
 ---
 
-Podemos incertar ecuaciones en línea como $E=mc^2$ y tambien podemos insertar bloques de ecuaciones como:
+Podemos insertar ecuaciones en línea como \\(E=mc^2\\) y también podemos insertar bloques de ecuaciones como:
 
 $$
 \begin{align}

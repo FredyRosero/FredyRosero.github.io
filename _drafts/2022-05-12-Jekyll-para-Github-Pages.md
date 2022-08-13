@@ -12,14 +12,15 @@ excerpt_separator: <!--more-->
 Abstract.
  <!--more-->
 
-## Instación de Ruby con RBEnv
+## Instalación 
+### Instalación de Ruby con RBEnv
 
-### Paso 1: Dependencias
+#### Paso 1: Dependencias
 ```bash
 sudo apt update
 sudo apt install git curl autoconf bison build-essential libssl-dev libyaml-dev libreadline6-dev zlib1g-dev libncurses5-dev libffi-dev libgdbm6 libgdbm-dev libdb-dev
 ```
-### Paso 2: RBEnv
+#### Paso 2: RBEnv
 ```bash
 curl -fsSL https://github.com/rbenv/rbenv-installer/raw/HEAD/bin/rbenv-installer | bash
 ```
@@ -37,7 +38,7 @@ Verfificamos con
 rbenv -v
 ```
 
-### Paso 3: Ruby 2.7
+#### Paso 3: Ruby 2.7
 > Github-Pages uses Jekyll 3.9, which isn’t compatible with Ruby 3. Downgrading to Ruby 2.7 should avoid the problem.
 
 https://talk.jekyllrb.com/t/error-no-implicit-conversion-of-hash-into-integer/5890/2
@@ -52,10 +53,31 @@ Definimos la versión local de Ruby con la opción [`local`](https://github.com/
 rbenv local 2.7.6
 ```
 
-Comprobamos con 
+Comprobamos la versión de `ruby` con: 
 ```bash
 ruby -v
 ```
+
+Comprobamos el gestor de paquetes de Ruby `gem`:
+```bash
+gem -v
+```
+
+### Instalación de paquetes Jekyll y bundler
+```bash
+gem install jekyll bundler
+bundle install
+```
+
+## Compilacion de Github Page
+```bash
+cd ~/.../FredyRosero.github.io
+bundle exec jekyll serve
+```
+
+## Valores por defecto
+https://jekyllrb.com/docs/configuration/front-matter-defaults/
+
 ## Posts
 
 https://jekyllrb.com/docs/posts/
