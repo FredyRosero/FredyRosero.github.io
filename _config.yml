@@ -23,8 +23,8 @@ email: faroseroc@unal.edu.co
 description: Estudiante de Ingeniería de sistemas, entusiasta de la divulgación y encantado con las artes
 baseurl: "" 
 url: "https://fredyrosero.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: fredyrosero
-github_username:  fredyrosero
+twitter_username: FredyAndresRo
+github_username:  FredyRosero
 github: [metadata]
 
 # Build settings
@@ -55,3 +55,10 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+# Defaults values
+defaults:
+  - scope:
+      path: ""
+    values:
+      image: /assets/images/default-card.jpg

@@ -20,6 +20,7 @@ date: ${date}
 layout: post
 categories: [category]
 excerpt_separator: <!--more-->
+image: 'assets/default-banner.jpg'
 ---
 
 ![thumbnail del post](assets/default-banner.jpg)
