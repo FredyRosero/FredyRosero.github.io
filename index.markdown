@@ -2,7 +2,7 @@
 # Feel free to add content and custom Front Matter to this file.
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
-layout: default
+layout: home
 ---
 
 <div class="posts">
@@ -10,7 +10,10 @@ layout: default
     <article class="post">
 
       <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
-
+      <big><b>{{ post.categories | join: " ‒ "}}</b></big>
+      <br>
+      {% if page.image%}<img src="{{ post.image }}">{% endif %}
+      {% include tag_cards.html tags=post.tags%}    
       <div class="entry">
         {{ post.excerpt }}
       </div>

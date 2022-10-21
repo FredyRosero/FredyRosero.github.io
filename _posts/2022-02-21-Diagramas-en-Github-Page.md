@@ -4,8 +4,16 @@ author: Fredy Rosero
 status: published
 date: '2022-02-21'
 layout: post
-categories: Github
-tags: github github-page mermaid uml
+categories: 
+    - Desarrollo de software
+    - Desarrollo web
+    - Jekyll
+tags: 
+    - github 
+    - github-page 
+    - mermaidJS 
+    - uml
+    - Jekyll
 excerpt_separator: <!--more-->
 ---
 

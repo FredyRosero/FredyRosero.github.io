@@ -4,7 +4,9 @@ author: Fredy Rosero
 tags: 'matemáticas, softbox, frustum, pirámide'
 date: '2022-02-27'
 layout: post
-category: matemáticas
+category: 
+    - matemáticas
+    - geometría
 ---
 
 ![Tronco de pirámide cuadrada de un softbox](https://docs.google.com/drawings/d/e/2PACX-1vTTa4TjiFSqIUGVfC5KPJpTd1300vcSihWxw1kiutRjzXbqL0YtNOyKaYaxX0SnVcA15Y-QPILm_YWE/pub?w=540&h=543)

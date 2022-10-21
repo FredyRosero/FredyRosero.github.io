@@ -1,10 +1,17 @@
 ---
 title: Crear una servidor web grátis con Google Cloud
 author: Fredy Rosero
-tags: 'google-cloud, comput-engine, apache, servidor-web'
 date: '2022-02-27'
 layout: post
-category: Google Cloud
+category: 
+    - Computación distribuida
+    - Computación en la nube
+    - Google Cloud     
+tags: 
+    - google-cloud
+    - comput-engine
+    - apache
+    - servidor-web    
 ---
 ![banner-google-cloud.png](/assets/banner-google-cloud.png)
 Muchas veces queremos desplegar un servidor web con fines pedagógicos o experimentales, y por ende, nos estaríamos dispuestos a pagar un hosting por un sitio web que al cumplir su finalidad se arrume en el olvido. Aquí es donde entra la capa gratuita de Google Cloud para su service Compute Engine que nos permite montar una máquina virtual para configurarla a nuestro antojo.

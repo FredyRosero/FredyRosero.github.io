@@ -12,64 +12,91 @@ excerpt_separator: <!--more-->
 Abstract.
  <!--more-->
 
-## Instalación 
-### Instalación de Ruby con RBEnv
+## Creación del repositorio remoto del sitio
+Debes crear un repositorio con nombre `nombredeusuario.github.io` donde "nombredeusuario" es tu usuario de github o el usuario de la organización si es el caso. Por ejemplo `FredyRosero.github.io`.
 
-#### Paso 1: Dependencias
+Luego en `Settings > Code and autoamtion > Pages` escoges un tema
+
+## Instalación de Jekyll
+Sique las intrucciones de como instalar Jekyll con Ruby. Luego instalaremos 
 ```bash
-sudo apt update
-sudo apt install git curl autoconf bison build-essential libssl-dev libyaml-dev libreadline6-dev zlib1g-dev libncurses5-dev libffi-dev libgdbm6 libgdbm-dev libdb-dev
-```
-#### Paso 2: RBEnv
-```bash
-curl -fsSL https://github.com/rbenv/rbenv-installer/raw/HEAD/bin/rbenv-installer | bash
+gem install github-pages
 ```
 
-Agregamos `$HOME/.rbenv/bin` a la variable de entorno **PATH**. Para *bash* es:
+
+## Agregar dependencias a tu repositorio local
+Al clonar el repositorio en tu máquina con `git clone https://github.com/FredyRosero/FredyRosero.github.io.git` algunos archivos quedan faltando para que Jekyll pueda trabajar. Para instalar las dependencias faltantes vamos a ejecutar el siguiente comando
 
 ```bash
-echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bashrc
-echo 'eval "$(rbenv init -)"' >> ~/.bashrc
-source ~/.bashrc
+jekyll new --skip-bundle . --force
 ```
 
-Verfificamos con 
+Esto modificará y agregará algunos archivos
 ```bash
-rbenv -v
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+    modified:   .gitignore
+    modified:   _config.yml
+    modified:   index.markdown
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+    404.html
+    Gemfile
+    Gemfile.lock
+    _posts/2022-08-17-welcome-to-jekyll.markdown
+    about.markdown
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
 ```
 
-#### Paso 3: Ruby 2.7
-> Github-Pages uses Jekyll 3.9, which isn’t compatible with Ruby 3. Downgrading to Ruby 2.7 should avoid the problem.
+Queremos restaurar el archivo `index.markdown` con `git checkout -- index.markdown`. Tambien vamos a eliminar `_posts/2022-08-17-welcome-to-jekyll.markdown` y `about.markdown`.
 
-https://talk.jekyllrb.com/t/error-no-implicit-conversion-of-hash-into-integer/5890/2
+## Reconfigurando el sitio
+En el archivo `Gemfile` Comenta la línea `gem "jekyll"` y agrega `gem "github-pages", group: :jekyll_plugins `
 
-Verificamos la versión cercana a `2.7` con `rbenv install -l`
-```bash
-rbenv install 2.7.6
+Para los temas en `_config.yml`
+```yaml
+remote_theme: pages-themes/hacker@v0.2.0
+plugins:
+- jekyll-remote-theme # add this line to the plugins list if you already have one
 ```
 
-Definimos la versión local de Ruby con la opción [`local`](https://github.com/rbenv/rbenv#rbenv-local)
-```bash
-rbenv local 2.7.6
+El plugin `ekyll-remote-theme` tambien debe ser agregado al `Gemfile`
+```Gemfile
+group :jekyll_plugins do
+  gem "jekyll-feed", "~> 0.12"
+  gem "jekyll-remote-theme"
+end
 ```
 
-Comprobamos la versión de `ruby` con: 
-```bash
-ruby -v
+Necesitas tambien en `_config.yml` agregar la metadata de Github. la cual contiene datos como la Authenticación de la API de Github:
+```yaml
+github: [metadata]
 ```
 
-Comprobamos el gestor de paquetes de Ruby `gem`:
-```bash
-gem -v
+Elmina el archivo `Gemfile.lock` es instala las (nuevas) dependencias con `bundle install`.
+
+Recuerda actualizar el `layout` de tus markdowns con los disponibles en tu tema. Por ejemplo el tema [hacker](https://github.com/pages-themes/hacker/tree/master/_layouts) solo tiene `default` y `page`. Puedes definir el *layout* por defecto en `_config.yml` con
+```yaml
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+    values:
+      layout: "default"
 ```
 
-### Instalación de paquetes Jekyll y bundler
-```bash
-gem install jekyll bundler
-bundle install
-```
 
-## Compilacion de Github Page
+
+## Lanzamiento local de Github Page
+Ahora podemos copmilar o servi
 ```bash
 cd ~/.../FredyRosero.github.io
 bundle exec jekyll serve

@@ -3,7 +3,7 @@ title: Introducción a Java
 author: FredyRosero
 tags: [tag1, tag2]
 date: 2022-08-09
-layout: test
+layout: post
 categories: [category]
 image: /assets/images/posts/Introducción a Java.jpg
 twitter:
