@@ -3,7 +3,8 @@
 
 body {
   background-color: #fff;
-  padding:50px;
+  /*padding:50px;*/
+  margin: 0;
   font: 14px/1.5 "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color:#727272;
   font-weight:400;
@@ -11,7 +12,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   color:#222;
-  margin:0 0 20px;
+  margin:0 0 10px;
 }
 
 p, ul, ol, table, pre, dl {
@@ -56,7 +57,7 @@ a:hover small {
 }
 
 .wrapper {
-  width:860px;
+  width:100%;
   margin:0 auto;
 }
 
@@ -122,7 +123,31 @@ header {
   /* width:270px; */
   /* float:left; */
   /* position:fixed; */
+  background-color: #222;
   -webkit-font-smoothing:subpixel-antialiased;
+  position: relative;  
+  padding: 25px;
+  h1 {
+    font-size:large;
+    margin-bottom: 0;
+  }
+  img {
+    border: 2px solid #BBB;
+    background-color: #000;
+    box-shadow: #000;
+    width: 16vw;
+    height: 16vw;
+    max-width: 90px;
+    max-height: 90px;
+    border-radius: 90px;
+    float: left;
+    margin-right: 10px;
+    margin-top: -10px;
+    position: relative;
+    z-index: 1;
+/*     left: 25px;
+    bottom: -25px; */
+  }
 }
 
 ul.downloads {
@@ -185,9 +210,10 @@ strong {
   color:#222;
 }
 
-section {
-  /* width:500px; */
-  /* float:right; */
+section {  
+  width:1000px;
+  margin: 0 auto;
+  padding-top:25px;
   padding-bottom:50px;
 }
 
@@ -204,10 +230,77 @@ hr {
 
 footer {
   width:270px;
-  float:left;
-  position:fixed;
-  bottom:50px;
+  margin: 0 auto;
+  padding: 10px;
+  /* float:left; */
+  /* position:fixed; */
   -webkit-font-smoothing:subpixel-antialiased;
+}
+
+article {
+  margin-bottom: 2em;
+}
+
+div.banner {
+  width: 100%;
+  height: auto;  
+  position: relative;
+
+  .banner-background {
+    background-color: lightgray;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+  }
+  .banner-content {
+    /* display: flex;     */
+    justify-content: center;
+    /* top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;   */  
+    padding: 20px;
+  }
+}
+div.relatedPosts {
+  
+  padding: 1.5em 1em;
+  border: 0.5px #EEE solid;
+  background-color: rgb(250, 250, 250);
+}
+
+div.posts {
+  img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+  }
+}
+
+/* Hastags de etiquetas de piosts */
+div.tag {
+  display: inline-block;
+  background-color: hsla(0deg, 100%, 100%, 15%);
+  border: 0.1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 4px;
+  padding: 0 0.4em;
+  margin-bottom: 10px;
+}
+
+ul.categories-list {
+  list-style-type: none; /* Remove bullets */
+  padding: 0; /* Remove padding */
+  margin: 0; /* Remove margins */  
+  li {
+    display: inline-block;
+    padding: 0.2em 0.5em;
+    border: 0.5px #EEE solid;
+    background-color: rgb(250, 250, 250);    
+
+  }
 }
 
 @media print, screen and (max-width: 960px) {
@@ -217,20 +310,24 @@ footer {
     margin:0;
   }
 
-  header, section, footer {
+  header, section, footer, div.contentWrapper {
     float:none;
-    position:static;
     width:auto;
   }
 
+  section, footer {
+    position:static;
+  }  
+
   header {
-    padding-right:320px;
+    /* padding-right:320px; */
+    margin-bottom: 20px;
   }
 
   section {
-    border:1px solid #e5e5e5;
-    border-width:1px 0;
-    padding:20px 0;
+/*     border:1px solid #e5e5e5;
+    border-width:1px 0; */
+    padding:20px;
     margin:0 0 20px;
   }
 
@@ -251,7 +348,7 @@ footer {
   }
 
   header {
-    padding:0;
+    /* padding:0; */
   }
 
   header ul, header p.view {
@@ -265,7 +362,7 @@ footer {
 
 @media print, screen and (max-width: 480px) {
   body {
-    padding:15px;
+    /* padding:15px; */
   }
 
   .downloads {
