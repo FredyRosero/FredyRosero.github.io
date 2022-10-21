@@ -18,7 +18,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Fredy Andres Rosero
+title: Fredy Rosero's Blog
 email: faroseroc@unal.edu.co
 description: Estudiante de Ingeniería de sistemas, entusiasta de la divulgación y encantado con las artes
 baseurl: "" 
@@ -26,7 +26,7 @@ url: "https://fredyrosero.github.io" # the base hostname & protocol for your sit
 twitter_username: FredyAndresRo
 github_username:  FredyRosero
 github: [metadata]
-
+logo: https://github.com/FredyRosero.png
 # Build settings
 theme: jekyll-theme-tactile
 plugins:
@@ -57,8 +57,11 @@ plugins:
 #   - vendor/ruby/
 
 # Defaults values
-defaults:
-  - scope:
-      path: ""
+defaults:  
+  - 
+    scope:
+      path: ""      # empty string for all files
+      type: posts   # limit to posts
     values:
-      image: /assets/images/default-card.jpg
+      is_post: true # automatically set is_post=true for all posts      
+ 

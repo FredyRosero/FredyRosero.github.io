@@ -20,10 +20,8 @@ date: ${date}
 layout: post
 categories: [category]
 excerpt_separator: <!--more-->
-image: 'assets/default-banner.jpg'
+image: 'assets/posts/default-thumbnail.jpg'
 ---
-
-![thumbnail del post](assets/default-banner.jpg)
 
 Abstract: poner un resumen de pocas lineas acá.
 <!--more-->
